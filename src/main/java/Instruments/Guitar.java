@@ -1,14 +1,9 @@
 package Instruments;
 
 import Interfaces.IPlayable;
-import Instruments.Sound;
 
 
 public class Guitar extends Instrument implements IPlayable {
-    String make;
-    String model;
-    String color;
-    String type;
     Play play;
 
     public Guitar(String make, String model, String color, String type){
@@ -16,8 +11,8 @@ public class Guitar extends Instrument implements IPlayable {
         this.play = play;
     }
 
-    public Play getPlay(){
-        return play;
+    public String play(){
+        return "Twang";
     }
 
 

@@ -1,5 +1,4 @@
 import Instruments.Drum;
-import Instruments.Sound;
 import org.junit.Before;
 import org.junit.Test;
 

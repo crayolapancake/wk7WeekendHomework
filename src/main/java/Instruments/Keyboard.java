@@ -1,25 +1,18 @@
 package Instruments;
 
 import Interfaces.IPlayable;
-import Instruments.Sound;
+import Instruments.Play;
 
 public class Keyboard extends Instrument implements IPlayable {
-    String make;
-    String model;
-    String color;
-    String type;
-    Sound sound;
+    Play play;
 
     public Keyboard(String make, String model, String color, String type) {
         super(make, model, color, type);
-        this.sound = sound;
+        this.play = play;
     }
 
-        public Sound getSound(){
-            return sound;
-        }
+    public String play(){
+        return "Plonk";
+    }
 
-        public void canPlay(){
-            return canPlay;
-        }
     }

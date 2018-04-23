@@ -1,7 +1,6 @@
 package Instruments;
 
 public abstract class Instrument {
-
     private String make;
     private String model;
     private String color;

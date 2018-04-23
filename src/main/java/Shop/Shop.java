@@ -1,7 +1,6 @@
 package Shop;
 
-public abstract class Shop {
-
+public class Shop {
     private String name;
     private int stock;
 
@@ -16,10 +15,6 @@ public abstract class Shop {
 
     public int getStockTotal(){
         return stock;
-    }
-
-    public int setStock(int stock){
-        this.stock = stock;
     }
 
     public void addToStock(int stockToAdd){

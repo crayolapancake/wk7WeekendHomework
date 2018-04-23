@@ -1,25 +1,42 @@
 package Instruments;
 
 import Interfaces.IPlayable;
-import Instruments.Instrument;
 
 public class Oboe extends Instrument implements IPlayable {
-    String make;
-    String model;
-    String color;
-    String type;
-    Sound sound;
+    Play play;
 
     public Oboe(String make, String model, String color, String type){
         super(make, model, color, type);
-        this.sound = sound;
+        this.play = play;  //comes from iplayable
     }
-    public Sound getSound(){
-        return sound;
+    public String play(){
+        return "Toot";
     }
 
-    public void canPlay() {
-        return canPlay;
-    }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
